@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="../primeirapg.html/favicon.ico" type="image/x-icon">
+     <title>Ultra calculadora</title>
+     <link rel="stylesheet" href="/css/conversões.css">
+ </head>
+ <body>
+     <header><h1>ULTRA CALCULADORA</h1></header>
+     <div>
+         <nav id="nav"> 
+             <a href="../primeirapg.html/index.html" target="_self" class="nav">Início</a>
+             <a href="#" class="pag-aberta">Conversões</a>
+         </nav>
+---
+        <section>
+            <h2><strong>Conversão de tempo</strong></h2>
+            <p id="p2">Converter <input type="number" name="tpnum" id="tpnum" class="inserir"> de 
+            <select name="tp1" id="tp1" class="opção">
+               <option value="Hora">Hora</option>
+               <option value="Minuto">Minuto</option>
+               <option value="Segundo">Segundo</option>
+            </select> para 
+            <select name="tp2" id="tp2" class="opção">
+               <option value="Hora" id="Hora">Hora</option>
+               <option value="Minuto" id="Minuto">Minuto</option>
+               <option value="Segundo">Segundo</option>
+            </select> !  
+            <input type="button" value="Calcular" id="cttempo" class="botão" onclick="contartp()">    
+            </p>
+        <div id="tpres"></div> 
+        </section>
+        <hr>
+        <section>
+            <h2 id="h3">Conversão de velocidade</h2>
+            <p id="p3">Converter <input type="number" name="vel" id="vel" class="inserir"> de 
+                <select name="vel1" id="vel1" class="opção">
+                    <option value="kmh">Km/h</option>
+                    <option value="ms">m/s</option>
+                </select> para 
+                <select name="vel2" id="vel2" class="opção">
+                    <option value="kmh">Km/h</option>
+                    <option value="ms">m/s</option>
+                </select> ! 
+                <input type="button" value="Calcular" id="ctvel" class="botão" onclick="contarvel()">
+            </p>
+            <div id="velres"></div>
+        </section>
+        <hr>
+        <section>
+            <h2 id="com"><strong>Conversão de comprimento</strong></h2>
+            <p>Converter <input type="number" name="com" id="comnum" class="inserir"> de 
+                <select name="com1" id="comsel1" class="opção">
+                    <option value="km">Km</option>
+                    <option value="cm">Cm</option>
+                    <option value="m">Metro</option>
+                </select> para
+                <select name="com2" id="comsel2" class="opção">
+                    <option value="km">Km</option>
+                    <option value="cm">Cm</option>
+                    <option value="m">Metro</option>
+                </select> !
+                <input type="button" value="Calcular" id="comcon" class="botão" onclick="contarcom()">
+            </p>
+            <div id="comres"></div>
+        </section>
+        <hr>
+        <section>
+            <h2 id="tem"><strong>Conversão de temperatura</strong></h2>
+            <p>Converter <input type="number" name="tem" id="temnum" class="inserir"> de
+                <select name="tem1" id="tem1" class="opção">
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit ">Fahrenheit </option>
+                    <option value="Kelvin">Kelvin</option>
+                </select> para
+                <select name="tem2" id="tem2" class="opção">
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit ">Fahrenheit </option>
+                    <option value="Kelvin">Kelvin</option>
+                </select> !
+                <input type="button" value="Calcular" id="temcon" class="botão" onclick="contartem()">
+                <div id="temres"></div>
+            </p>
+        </section>
+     </div>  
+     <script src="conversões.js"></script>
+ </body>
+ </html> 
