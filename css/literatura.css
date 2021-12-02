@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #e75db99d;
+    --cor02: #e78d39;
+    --cor03: #1c2227;
+    --cor04: #04198b;
+    --cor05: #f8f3ae;
+    --fonte-destaque: bold normal 1.2em 'Times';
+    --link-ativado: #077bda;
+}
+
+.conteudo {
+    background-color: var(--cor05);
+    min-width: 300px;
+    max-width: 420px;
+    padding-right: 30px;
+    margin-top: 3em;
+    border-radius: 0px 20px 20px 20px;
+    font-size: 19px;
+}
+
+ul.conteudo {
+    font-size: 1.8em;
+}
+
+span {
+    font: var(--fonte-destaque);
+    color: var(--cor1);
+}
+
+li {
+    padding-top: 5px;
+    text-align: left;
+}
+
+section {
+    display: inline-block;
+    margin: 20px;
+}
+
+.conteudo-caixas {
+    text-align: center;
+}
+
+.voltar-botao {
+    width: 65px;
+    position: relative;
+        left: 27rem;
+        top: 13em;
+}
+
+.capa {
+    font-size: 2em;
+    padding: 0.8em;
+    color: var(--cor1);
+    text-decoration: none;
+}
+
+.capa:hover {
+    text-decoration: underline;
+}
