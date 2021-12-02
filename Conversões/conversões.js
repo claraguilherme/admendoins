@@ -4,9 +4,9 @@ function contartp() {
     let tempo1 = document.getElementById('tp1')
     let tempo2 = document.getElementById('tp2')
     let tp = Number(tpnm.value)
-    
-    if (tp==0) {
-       alert('Dados insuficientes!') 
+
+    if (tp == 0) {
+        alert('Dados insuficientes!')
     } else {
         if (tempo1[0].selected && tempo2[1].selected) {
             tpres.innerHTML = `O resultado é ${tp*60} minutos!`
@@ -19,12 +19,13 @@ function contartp() {
         } else if (tempo1[2].selected && tempo2[1].selected) {
             tpres.innerHTML = `O resultado é ${tp/60}`
         } else if (tempo1[2].selected && tempo2[0].selected) {
-            tpres.innerHTML = `O resultado é ${tp/3600} horas!` 
+            tpres.innerHTML = `O resultado é ${tp/3600} horas!`
         } else {
             alert('[ERRO] Verifique as opções selecionadas e tente novamente!')
         }
     }
 }
+
 function contarvel() {
     let velres = document.getElementById('velres')
     let vel1 = document.getElementById('vel1')
@@ -32,18 +33,19 @@ function contarvel() {
     let vlnum = document.getElementById('vel')
     let vlnm = Number(vlnum.value)
 
-    if (vlnm==0) {
+    if (vlnm == 0) {
         alert('Dados insuficientes!')
     } else {
-        if (vel1[0].selected && vel2[1].selected){
-            velres.innerHTML = `O resultado é ${vlnm/3.6} m/s!` 
-        } else if (vel1[1].selected && vel2[0].selected){
+        if (vel1[0].selected && vel2[1].selected) {
+            velres.innerHTML = `O resultado é ${vlnm/3.6} m/s!`
+        } else if (vel1[1].selected && vel2[0].selected) {
             velres.innerHTML = `O resultado é ${vlnm*3.6} Km/h!`
         } else {
             alert('[ERRO] Verifique as opções seleciodadas e tente novamente!')
         }
     }
-}  
+}
+
 function contarcom() {
     let comres = document.getElementById('comres')
     let num = document.getElementById('comnum')
@@ -51,13 +53,13 @@ function contarcom() {
     let com2 = document.getElementById('comsel2')
     let cmnm = Number(num.value)
 
-    if (cmnm==0) {
+    if (cmnm == 0) {
         alert('Dados insuficientes')
     } else {
         if (com1[0].selected && com2[1].selected) {
             comres.innerHTML = `O resultado é ${cmnm*100000} cm!`
         } else if (com1[0].selected && com2[2].selected) {
-            comres.innerHTML = `O resultado é ${cmnm*1000} m!` 
+            comres.innerHTML = `O resultado é ${cmnm*1000} m!`
         } else if (com1[1].selected && com2[0].selected) {
             comres.innerHTML = `O resultado é ${cmnm/100000} Km!`
         } else if (com1[1].selected && com2[2].selected) {
@@ -71,6 +73,7 @@ function contarcom() {
         }
     }
 }
+
 function contartem() {
     let temres = document.getElementById('temres')
     let temnum = document.getElementById('temnum')
@@ -78,11 +81,11 @@ function contartem() {
     let tem2 = document.getElementById('tem2')
     let tmnm = Number(temnum.value)
 
-    if (tmnm==0) {
+    if (tmnm == 0) {
         alert('[ERRO] Dados insuficientes!')
     } else {
         if (tem1[0].selected && tem2[1].selected) {
-            temres.innerHTML = `O resultado é ${(tmnm * 1.8) + 32}ºF!` 
+            temres.innerHTML = `O resultado é ${(tmnm * 1.8) + 32}ºF!`
         } else if (tem1[1].selected && tem2[0].selected) {
             temres.innerHTML = `O resultado é ${(tmnm - 32) / 1.8}ºC!`
         } else if (tem1[2].selected && tem2[0].selected) {

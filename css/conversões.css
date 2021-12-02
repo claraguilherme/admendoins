@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 * {
     padding: 0px;
     margin: 0px;
@@ -17,6 +16,8 @@
     --cor09: #e7fdfd;
     --cor10: #2f4f4f;
     --cor11: #0eff0eaf;
+    --cor12: #fffafa;
+    --cor13: #f5f5f5;
     --link-ativado: #1d99ff;
     --fonte-destaque: bold normal 1.5em 'Times';
     --texto-padrao: normal normal 1.5em 'Times';
@@ -50,7 +51,7 @@ header {
 }
 
 .nav {
-    color: whitesmoke;
+    color: var(--cor13);
     text-decoration: none;
 }
 
@@ -61,6 +62,7 @@ header {
 .pag-aberta {
     color: var(--link-ativado);
     text-decoration: none;
+    font-weight: bold;
 }
 
 h2 {
@@ -70,7 +72,7 @@ h2 {
 }
 
 p {
-    color: snow;
+    color: var(--cor12);
     font: var(--texto-padrao);
 }
 
@@ -99,4 +101,11 @@ section {
     height: 2em;
     text-align: center;
     font-size: 0.7em;
+}
+
+.cvres {
+    color: var(--cor13);
+    text-align: center;
+    padding-top: 10px;
+    padd 7px
 }

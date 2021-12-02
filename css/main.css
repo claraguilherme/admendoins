@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 :root {
     --cor01: #7018c2;
     --cor02: #e78d39;
@@ -48,4 +47,5 @@ body {
 .pag-aberta {
     color: var(--link-ativado);
     text-decoration: none;
+    font-weight: bold;
 }
